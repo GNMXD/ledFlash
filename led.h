@@ -3,6 +3,11 @@
 
 #include "stdio.h"
 
+#define LED_STATUS_turnOn   0
+#define LED_STATUS_turnOff  1
+
+#define LED_CYCLE_CNT      10
+
 void led_init(void);
 
 void led_fsm(void);

@@ -13,7 +13,7 @@ void led_init(void)
 void led_fsm(void)
 {
   ledCnt++;
-  if(ledCnt >10)
+  if(ledCnt >LED_CYCLE_CNT)
   {
     ledCnt = 0;
   }
@@ -21,10 +21,10 @@ void led_fsm(void)
   switch(ledCnt)
   {
     case 0:
-     ledStatus = 1;
+     ledStatus = LED_STATUS_turnOff;
      break;
     case 5:
-     ledStatus = 0;
+     ledStatus = LED_STATUS_turnOn;
      break;
     default:
      break;
