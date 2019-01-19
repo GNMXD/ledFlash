@@ -21,7 +21,7 @@ void led_fsm(void)
   switch(ledCnt)
   {
     case 0:
-     ledStatsu = 1;
+     ledStatus = 1;
      break;
     case 5:
      ledStatus = 0;
