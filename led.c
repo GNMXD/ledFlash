@@ -1,5 +1,5 @@
-#include "stdio.h"
 
+#include "led.h"
 
 static char ledStatus = 0;
 static int  ledCnt = 0;
@@ -10,7 +10,7 @@ void led_init(void)
   ledCnt = 0;
 }
 
-void led_FSM(void)
+void led_fsm(void)
 {
   ledCnt++;
   if(ledCnt >10)
