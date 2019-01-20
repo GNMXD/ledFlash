@@ -12,8 +12,7 @@ void led_init(void)
 
 void led_fsm(void)
 {
-  ledCnt++;
-  if(ledCnt >LED_CYCLE_CNT)
+  if(++ledCnt >LED_CYCLE_CNT)
   {
     ledCnt = 0;
   }
