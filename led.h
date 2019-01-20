@@ -8,6 +8,9 @@
 
 #define LED_CYCLE_CNT      10
 
+#define LED_MODE_turnOn     1
+#define LED_MODE_turnOff    0
+
 void led_init(void);
 
 void led_fsm(void);

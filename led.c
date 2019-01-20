@@ -1,13 +1,22 @@
 
 #include "led.h"
 
-static char ledStatus = 0;
+static char ledStatus = LED_STATUS_turnOff;
 static int  ledCnt = 0;
+static char ledMode =LED_MODE_turnOff;
 
 void led_init(void)
 {
   ledStatus = 0;
   ledCnt = 0;
+}
+
+void led_cfg(char mode)
+{
+  if(mode!=ledMode)
+  {
+    ledMode = mode;
+  }
 }
 
 void led_fsm(void)
