@@ -43,3 +43,8 @@ void led_Off(void)
 {
   ledStatus = LED_STATUS_turnOff;
 }
+
+void led_turnOn(void)
+{
+  ledStatus = LED_STATUS_turnOn;
+}
