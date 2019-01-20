@@ -38,3 +38,8 @@ void led_fsm(void)
      break;
   }
 }
+
+void led_Off(void)
+{
+  ledStatus = LED_STATUS_turnOff;
+}
